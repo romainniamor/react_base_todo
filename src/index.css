@@ -1,0 +1,90 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  color: rgb(42, 42, 42);
+  background-color: #f1f1f1;
+}
+
+h1 {
+  font-size: 3.2em;
+}
+
+button {
+  border-radius: 8px;
+  padding: 0.8em 1.2em;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  background: #06ba78;
+  transition: all 0.8s;
+  border: none;
+  margin: 0.2em;
+}
+
+.mid-priority {
+  background: #028353;
+}
+
+.high-priority {
+  background-color: rgb(249, 177, 44);
+}
+
+.delete {
+  background: rgb(242, 53, 53);
+}
+
+#root {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  gap: 2em;
+}
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.item,
+form {
+  transition: filter 800ms;
+  width: fit-content;
+  min-width: 320px;
+  background: #00ffff;
+  border-radius: 1.2em;
+  padding: 1em;
+  height: min-content;
+}
+
+.item:hover {
+  filter: drop-shadow(0 0 1em #0fb1e8);
+}
+
+form {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border: 2px solid #cbcbcb;
+  padding-bottom: 2em;
+  height: fit-content;
+}
+
+form input {
+  padding: 1em;
+  border-radius: 0.5em;
+  background: white;
+  border: none;
+  color: rgb(42, 42, 42);
+}
+
+form input:focus {
+  outline: 3px solid #08b8f3;
+}
